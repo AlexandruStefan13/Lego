@@ -6,14 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Lego</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <div>
-        <div>
+        <div class="container1">
             <div>
                 <div>
-                    <div>
+                    <div class="columnbox">
                         <h2>Column 1 of 3</h2>
                         <div>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita minima placeat quae natus obcaecati? Repudiandae eaque illum tempore porro. Est culpa commodi quibusdam, eos minus asperiores iusto quos laboriosam provident.</p>
@@ -27,7 +28,7 @@
             </div>
             <div>
                 <div>
-                    <div>
+                    <div class="columnbox">
                         <h2>Column 2 of 3</h2>
                         <div>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut perspiciatis reiciendis facere quasi molestiae at autem incidunt ab cum nostrum quam rerum similique eius et blanditiis quibusdam ipsa, officia quo!</p>
@@ -42,7 +43,7 @@
             </div>
             <div>
                 <div>
-                    <div>
+                    <div class="columnbox">
                         <h2>Column 3 of 3</h2>
                         <div>
                             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis beatae repellat cum voluptatum, similique ratione nemo! Praesentium inventore quos fugiat. Atque autem eligendi eum voluptates neque possimus voluptate
@@ -59,24 +60,32 @@
             </div>
         </div>
         <div>
-            <div>
+            <div class="container2">
                 <h3>Register now!</h3>
                 <form>
                     <div>
                         <label for="email">Email address</label>
+                        <br>
                         <input type="email" id="email" aria-describedby="emailHelp">
                         <div id="emailHelp">We'll never share your email with anyone else.</div>
+                        <br>
                     </div>
                     <div>
                         <label for="passwd">Password</label>
+                        <br>
                         <input type="password" id="passwd">
+                        <br>
                     </div>
                     <div>
+
                         <input type="checkbox" id="keep">
                         <label for="keep">Keep me logged in</label>
+
                     </div>
                     <div>
+                        <br>
                         <label for="dropdown">Preference</label>
+                        <br>
                         <select id="dropdown" aria-label=".form-select-sm example">
                             <option selected="">Open this select menu</option>
                             <option value="1">I like this</option>
@@ -86,12 +95,15 @@
                     </div>
                     <div>
                         <p>There are some other options:</p>
-                        <div><input type="radio" name="radios" id="radio-1" checked=""><label for="radio-1">Option 1</label></div>
-                        <div><input type="radio" name="radios" id="radio-2"><label for="radio-2">Option 2</label></div>
-                        <div><input type="radio" name="radios" id="radio-3"><label for="radio-3">Option 3</label></div>
+                        <div class="options">
+                            <div><input type="radio" name="radios" id="radio-1" checked=""><label for="radio-1">Option 1</label></div>
+                            <div><input type="radio" name="radios" id="radio-2"><label for="radio-2">Option 2</label></div>
+                            <div><input type="radio" name="radios" id="radio-3"><label for="radio-3">Option 3</label></div>
+                        </div>
                     </div>
-                    <button type="submit">Submit</button>
-                    <button type="cancel">Clear</button>
+                    <br>
+                    <button class="btn-submit" type="submit">Submit</button>
+                    <button class="btn-clear" type="cancel">Clear</button>
                 </form>
             </div>
         </div>
