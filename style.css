@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.columnbox {
+    border: solid 2px black;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+@media all and (min-width:768px) {
+    .cbox {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.container2 {
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    padding: 2px;
+}
+
+.options {
+    display: flex;
+}
+
+#email {
+    width: 99%;
+}
+
+#passwd {
+    width: 99%;
+}
+
+#dropdown {
+    width: 99%;
+}
+
+#emailHelp {
+    color: gray;
+}
+
+.btn-submit {
+    background-color: blue;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-bottom: 0.3rem;
+}
+
+.btn-clear {
+    background-color: orange;
+    border: solid 2px red;
+    padding: 0.4rem 1.5rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+th {
+    text-align: left;
+    padding: 1rem;
+    margin: 0;
+}
+
+tbody {}
